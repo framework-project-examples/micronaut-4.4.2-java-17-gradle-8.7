@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: micronautexample
+datasources:
+  default:
+    driver-class-name: org.postgresql.Driver
+    db-type: postgres
+cassandra:
+  default:
+    clusterName: '"myCluster"'
+    contactPoint: '"localhost"'
+    port: 9042
+    maxSchemaAgreementWaitSeconds: 20
+    ssl: true
+netty:
+  default:
+    allocator:
+      max-order: 3
